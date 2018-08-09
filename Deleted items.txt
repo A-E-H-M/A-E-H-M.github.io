@@ -1,0 +1,30 @@
+Deleted items
+
+			<li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="databasedesign.html">Database Design
+			   <span class="sr-only">(current)</span></a>
+			</li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="softwareplatforms.html">Software Platforms</a>
+            </li>
+
+section for bottom of home page
+
+	<section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Quote</span>
+                <span class="section-heading-lower">Rose George</span>
+              </h2>
+              <p class="mb-0">&quot;We are using the same water that the dinosaurs drank&#44 and this same water has to make ice creams in Pasadena and the morning frost in Paris&#46 &quot;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+background
+linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(../img/.jpg)
