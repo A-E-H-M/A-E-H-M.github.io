@@ -19,6 +19,15 @@
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
+	  
+    <!-- This is for the basemap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+        integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+        <title>My map</title>
 
   </head>
 
@@ -56,6 +65,41 @@
       </div>
     </nav>
 
+<section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex ml-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">Leaflet, HTLM</span>
+                <span class="section-heading-lower">Creating Basemap</span>
+              </h2>
+            </div>
+          </div>
+            <body>
+     		<div id="mymap" style="height: 800px"></div>
+      		<script type="text/javascript">
+       			var map = L.map('mymap', {
+        	  		center: [41.8749893,-87.7284006],
+        	 		zoom: 11
+       			});
+        		L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+         			attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
+          			maxZoom: 16,
+          			minZoom: 5
+        		}).addTo(map);
+    		</script>
+	     </body>
+          <div class="product-item-description d-flex mr-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Basemap 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+	  
+	  
     <section class="page-section">
       <div class="container">
         <div class="product-item">
